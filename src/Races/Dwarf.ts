@@ -1,21 +1,21 @@
-// import Race from './Race';
+import Race from './Race';
 
-// export default class Dwarf extends Race {
-//   private _maxLifePoints: number;
-//   static counter: 0;
+export default class Dwarf extends Race {
+  _maxLifePoints: number;
+  static counter = 0;
 
-//   constructor(name: string, dexterity: number) {
-//     super(name, dexterity);
-//     this._maxLifePoints = 80;
-//     Elf.createdRacesInstances();
-//   }
+  constructor(name: string, dexterity: number) {
+    super(name, dexterity);
+    this._maxLifePoints = 80;
 
-//   get maxLifePoints(): number {
-    
-//   }
+    Dwarf.counter += 1;
+  }
 
-//   static createdRacesInstances(): number {
-//     const newChar = this.counter + 1;
-//     return newChar;
-//   }
-// }
+  get maxLifePoints(): number {
+    return this._maxLifePoints;
+  }
+
+  static createdRacesInstances(): number {
+    return Dwarf.counter;
+  }
+}

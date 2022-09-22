@@ -1,21 +1,21 @@
-// import Race from './Race';
+import Race from './Race';
 
-// export default class Orc extends Race {
-//   _maxLifePoints: number;
-//   static counter = 0;
+export default class Orc extends Race {
+  _maxLifePoints: number;
+  static counter = 0;
 
-//   constructor(name: string, dexterity: number) {
-//     super(name, dexterity);
-//     this._maxLifePoints = 74;
+  constructor(name: string, dexterity: number) {
+    super(name, dexterity);
+    this._maxLifePoints = 74;
 
-//     Orc.counter += 1;
-//   }
+    Orc.counter += 1;
+  }
 
-//   get maxLifePoints(): number {
-//     return this._maxLifePoints;
-//   }
+  get maxLifePoints(): number {
+    return this._maxLifePoints;
+  }
 
-//   static createdRacesInstances(): number {
-//     return Orc.counter;
-//   }
-// }
+  static createdRacesInstances(): number {
+    return Orc.counter;
+  }
+}
