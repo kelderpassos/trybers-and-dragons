@@ -1,7 +1,7 @@
 import Race from './Race';
 
 export default class Orc extends Race {
-  _maxLifePoints: number;
+  private _maxLifePoints: number;
   static counter = 0;
 
   constructor(name: string, dexterity: number) {
