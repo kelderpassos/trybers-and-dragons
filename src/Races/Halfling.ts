@@ -1,4 +1,4 @@
-import Race from './Race';
+import Race from './Races';
 
 export default class Halfling extends Race {
   

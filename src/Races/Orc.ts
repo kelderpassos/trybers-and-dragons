@@ -1,5 +1,5 @@
-import Race from './Race';
+// import Race from './Races';
 
-export default class Orc extends Race {
+// export default class Orc extends Race {
   
-}
+// }
